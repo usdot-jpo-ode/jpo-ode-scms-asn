@@ -1,3 +1,6 @@
+--<OSS.PDU IEEE1609dot2ScmsProtocol.SignedEeEnrollmentCertRequest>--
+--<OSS.PDU IEEE1609dot2ScmsProtocol.ScopedCertificateRequest>--
+--<OSS.PDU IEEE1609dot2ScmsProtocol.SignedCertificateRequest>--
 -- 
 --  Copyright 2017 Crash Avoidance Metrics Partner, VSC5 Consortium
 -- 
@@ -46,7 +49,7 @@ dot2(2) base (1) schema (1)}
   MisbehaviorReportingPsid,
   SecurityMgmtPsid
 FROM Ieee1609dot2ScmsBaseTypes {iso(1) identified-organization(3) ieee(111)
-standards-association-numbered-series-standards(2) wave-stds(1609)  dot2(2)
+standards-association-numbered-series-standards(2) wave-stds(1609) dot2(2)
 scms (2) interfaces(1) base-types (2)}
 
   ScmsComponentCertificateManagementPDU
@@ -766,7 +769,7 @@ ScopedRaPgPolicySignatureRequestReply ::=
 -- @brief This structure defines the all certificate requests messages as 
 --        scoped version of the ScmsPDU.
 -- @class ScopedCertificateRequest
-  ScopedCertificateRequest ::= ScmsPDU (
+ScopedCertificateRequest ::= ScmsPDU (
      ScopedEeRaCertRequest |
      ScopedEeEnrollmentCertRequest |
      ScopedPseudonymCertProvisioningRequest |
